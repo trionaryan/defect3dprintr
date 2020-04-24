@@ -1,11 +1,22 @@
 Package: defect3dprintr
-Type: Package
-Title: What the Package Does (Title Case)
+Title: Defect Detection in DMLS Additive Manufacturing using Machine Learning and Statistical Anomaly Detection
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Author: c( 
+    person(person("Caitriona", "Ryan", email = "triona.ryan@mu.ie", role = c("aut", "cre")),
+    person("Andrew", "Parnell", email = "andrew.parnell@mu.ie", role = c("aut"))
+ )
+Maintainer: Caitriona Ryan <triona.ryan@mu.ie>
+Description: The 'defect3dprintr' package provides a machine learning / statistical approach to defect detection using an in-situ camera monitoring system for advanced manufacturing. Examples are from a direct metal laser sintering (DMLS) process.
+License: GPL (>= 3) + file LICENSE
 Encoding: UTF-8
 LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.0
+Imports: magick, pixmap, anomalize, dplyr, glue, timetk, sweep, tibbletime (>= 0.1.3), purrr,
+        rlang, tibble, tidyr (>= 1.0.0), ggplot2, cli, crayon, stats,
+        rstudioapi,TSA,forecast, devtools, AnomalyDetection, grid, ggplotify, compiler
+Depends: R (>= 2.10)
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
