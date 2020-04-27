@@ -22,13 +22,12 @@ You can install the development version from [GitHub](https://github.com/) with:
 # library(defect3dprintr)
 ```
 
-Examples.
----------
+Examples
+--------
 
 Here are two examples using images of the EOS DMLS XXX system. A XXX camera is mounted inside the build chamber capturing the powder bed layer before and after laser fire.
 
-Example 1. Manual Shortfeeding
-------------------------------
+### Example 1. Manual Shortfeeding
 
 Manual shortfeeding of powder was induced defects in cubes built by the DMLS process. Line segment detection was used to identify inconsistent areas of powder on the build plate.
 
@@ -37,16 +36,15 @@ Manual shortfeeding of powder was induced defects in cubes built by the DMLS pro
 ## basic example code
 ```
 
-Example 2 - Recoater Streaking
-------------------------------
+### Example 2. Recoater Streaking
 
 This is an example detecting recoater streaking during a build. This occured naturally in the process.
 
-Example 3 - Streaming Anomaly Detection During Production
----------------------------------------------------------
+Streaming Anomaly Detection During Production
+---------------------------------------------
 
 The line segment count was recorded during the build at each layer. Using time series anomaly detection, anomalies can be detected while streaming the data via statistical learning.
 
-1.  Run lsd - (this is quite though?!? Do I need to put a series of images on github then? image1 to image100 say)
-2.  Do some anomaly detection using r-esd (easy and quick)
+1.  Run lsd - (Say image1 to image100 low resolution, could be stored on github rather than in package (.buildIgnore))
+2.  Do anomaly detection using r-esd (easy and quick)
 3.  Plot the results i.e. line segment count across time with anomalies marked.
